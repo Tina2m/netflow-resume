@@ -1,9 +1,8 @@
-"use client";
-
 import { useEffect } from "react";
 import { usePathname } from "@/i18n/navigation";
+import { scrollToTarget } from "@/src/smoothScroll";
 
-/** Scroll to #hash after client navigations (Next.js often skips native hash scroll). */
+/** Scroll to #hash after client navigations. */
 export function HashScroll() {
   const pathname = usePathname();
 
@@ -17,7 +16,7 @@ export function HashScroll() {
       const tryScroll = (attemptsLeft: number) => {
         const el = document.getElementById(id);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          scrollToTarget(el);
           return;
         }
         if (attemptsLeft > 0) {

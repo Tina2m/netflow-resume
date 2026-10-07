@@ -1,18 +1,3 @@
-import type { LucideIcon } from "lucide-react";
-import {
-  Workflow,
-  MessageSquare,
-  BookOpen,
-  Database,
-  Scale,
-  Phone,
-  Flame,
-  Headphones,
-  Stethoscope,
-  Mic,
-  ShieldCheck,
-} from "lucide-react";
-
 export type Bilingual = {
   en: string;
   fa: string;
@@ -20,8 +5,6 @@ export type Bilingual = {
 
 export type Product = {
   slug: string;
-  icon: LucideIcon;
-  accent: string;
   name: Bilingual;
   short: Bilingual;
   purpose: Bilingual;
@@ -38,8 +21,6 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: "netflowai-platform",
-    icon: Workflow,
-    accent: "from-violet-500 to-fuchsia-500",
     name: {
       en: "NetflowAI Automation Platform",
       fa: "پلتفرم اتوماسیون نِت‌فلو AI",
@@ -81,11 +62,9 @@ export const products: Product[] = [
   },
   {
     slug: "helpdesk",
-    icon: MessageSquare,
-    accent: "from-purple-500 to-indigo-500",
     name: {
-      en: "Helpdesk — RAG-Driven Organizational Bot",
-      fa: "هلپ‌دسک — راهنمای هوشمند سامانه‌های سازمانی",
+      en: "Helpdesk - RAG-Driven Organizational Bot",
+      fa: "هلپ‌دسک - راهنمای هوشمند سامانه‌های سازمانی",
     },
     short: {
       en: "A Persian RAG-based chatbot that helps employees find answers from official organizational knowledge, guides, and internal system documentation.",
@@ -130,8 +109,6 @@ export const products: Product[] = [
   },
   {
     slug: "knowledge-base",
-    icon: BookOpen,
-    accent: "from-fuchsia-500 to-purple-600",
     name: {
       en: "Knowledge Base",
       fa: "پایگاه دانش",
@@ -174,11 +151,9 @@ export const products: Product[] = [
   },
   {
     slug: "aibi",
-    icon: Database,
-    accent: "from-violet-600 to-purple-500",
     name: {
-      en: "AIBI — AI DB Assistant",
-      fa: "AIBI — دستیار هوش‌مند پایگاه داده",
+      en: "AIBI - AI DB Assistant",
+      fa: "AIBI - دستیار هوش‌مند پایگاه داده",
     },
     short: {
       en: "An AI-powered database assistant that lets users ask business or operational questions in natural language and receive database-driven answers, charts, or reports.",
@@ -217,11 +192,9 @@ export const products: Product[] = [
   },
   {
     slug: "moharrer",
-    icon: Scale,
-    accent: "from-indigo-500 to-violet-600",
     name: {
       en: "Moharrer Legal Assistant",
-      fa: "محرر — دستیار حقوقی",
+      fa: "محرر - دستیار حقوقی",
     },
     short: {
       en: "An AI-powered legal drafting assistant trained for the judicial and legal context of the Islamic Republic of Iran.",
@@ -255,11 +228,9 @@ export const products: Product[] = [
   },
   {
     slug: "naha",
-    icon: Phone,
-    accent: "from-purple-600 to-pink-500",
     name: {
-      en: "Naha — Real-time Voice & Text AI",
-      fa: "ناها — هوش گفت‌وگوی صوتی و متنی بلادرنگ",
+      en: "Naha - Real-time Voice & Text AI",
+      fa: "ناها - هوش گفت‌وگوی صوتی و متنی بلادرنگ",
     },
     short: {
       en: "A real-time AI-powered text and voice communication platform for customer service, consultation, and business support.",
@@ -299,8 +270,6 @@ export const products: Product[] = [
   },
   {
     slug: "fire-smoke-detection",
-    icon: Flame,
-    accent: "from-rose-500 to-orange-500",
     name: {
       en: "Fire & Smoke Detection System",
       fa: "سیستم تشخیص آتش و دود",
@@ -339,11 +308,9 @@ export const products: Product[] = [
   },
   {
     slug: "poshtiban",
-    icon: Headphones,
-    accent: "from-violet-500 to-cyan-500",
     name: {
-      en: "Poshtiban — 24/7 Customer Service Bot",
-      fa: "پشتیبان — چت‌بات خدمات مشتری ۲۴/۷",
+      en: "Poshtiban - 24/7 Customer Service Bot",
+      fa: "پشتیبان - چت‌بات خدمات مشتری ۲۴/۷",
     },
     short: {
       en: "A 24/7 AI chatbot for online business customer service.",
@@ -381,11 +348,9 @@ export const products: Product[] = [
   },
   {
     slug: "tabib",
-    icon: Stethoscope,
-    accent: "from-teal-500 to-violet-500",
     name: {
-      en: "Tabib — AI Medical Consultation",
-      fa: "طبیب — مشاوره پزشکی هوشمند",
+      en: "Tabib - AI Medical Consultation",
+      fa: "طبیب - مشاوره پزشکی هوشمند",
     },
     short: {
       en: "An AI-driven diagnosis and medical consultation platform.",
@@ -419,11 +384,9 @@ export const products: Product[] = [
   },
   {
     slug: "catalyst-minutes",
-    icon: Mic,
-    accent: "from-indigo-500 to-purple-600",
     name: {
-      en: "Catalyst Minutes — Diarization & Meeting Intelligence",
-      fa: "Catalyst Minutes — صورت‌جلسه و هوش گردهمایی",
+      en: "Catalyst Minutes - Diarization & Meeting Intelligence",
+      fa: "Catalyst Minutes - صورت‌جلسه و هوش گردهمایی",
     },
     short: {
       en: "An AI system that converts industrial meeting audio into structured, verifiable, and actionable meeting records.",
@@ -462,8 +425,6 @@ export const products: Product[] = [
   },
   {
     slug: "avl-trust",
-    icon: ShieldCheck,
-    accent: "from-emerald-500 to-violet-600",
     name: {
       en: "AVL Trust Infrastructure",
       fa: "زیرساخت AVL Trust",
